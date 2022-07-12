@@ -1,0 +1,119 @@
+.resume {
+    padding-top: 126px;
+
+    &__suptitle {
+        position: relative;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        @include before__circle;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+        color: #000000;
+    }
+
+    &__strip {
+        position: relative;
+        @include strip;
+        margin: 20px auto 0;
+    }
+
+    &__grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(375px, 375px));
+        // grid-template-rows: repeat(2, 1fr);
+        justify-content: space-around;
+        align-items: flex-start;
+        row-gap: 45px;
+
+    }
+
+    &__list {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -47px;
+            width: 1px;
+            height:calc(100% - 26px);
+            background-color: #000000;
+        }
+    }
+
+    &__list li {
+        position: relative;
+
+        .school-icons {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+        }
+    }
+
+    &__list h4 {
+        @include small-circle;
+        position: relative;
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__list .school {
+        @include before__circle1;
+        position: relative;
+        margin: 45px 0 0 56px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+
+    }
+
+    &__year {
+        position: relative;
+        margin: 0 0 0 56px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -102px;
+            width: 42px;
+            height: 1px;
+            background-color: #000000;
+        }
+    }
+
+    &__text {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+}

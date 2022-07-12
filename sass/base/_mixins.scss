@@ -1,0 +1,92 @@
+@mixin before__circle {
+    &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -10px;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+    }
+}
+
+@mixin before__circle1 {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -60px;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+    }
+}
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+@mixin strip {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+}
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin about__me-icon0 {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -44px;
+        width: 25px;
+        height: 24px;
+        background-image: url('../../icons/about_me/web_development.svg');
+        transform: translateY(50%);
+        z-index: 1;
+    }
+}
+
+@mixin about__me-icon1 {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: -42px;
+        width: 13px;
+        height: 24px;
+        background-image: url('../../icons/about_me/mobile_dev.svg');
+        transform: translateY(50%);
+        z-index: 1;
+    }
+}
+
+@mixin about__me-icon2 {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -44px;
+        width: 25px;
+        height: 21px;
+        background-image: url('../../icons/about_me/design.svg');
+        transform: translateY(73%);
+        z-index: 1;
+    }
+}
+
+@mixin small-circle {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -54px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+    }
+}

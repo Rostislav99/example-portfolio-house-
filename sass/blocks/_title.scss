@@ -1,0 +1,103 @@
+.title__main {
+    padding-top: 205px;
+
+    .title__suptitle {
+        position: relative;
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        z-index: 1;
+
+        @include before__circle;
+    }
+
+    // анимация иконки  `title__suptitle`
+    .title__suptitle:hover {
+        animation-name: title__suptitle; // привязка анимации через имя анимации(title__suptitle)
+        animation-duration: 3.5s; // время действия,скорости анимации
+        animation-iteration-count: infinite; // указывает, сколько раз проигрывается цикл анимации/infinite - анимация проигрывается безконечно
+        animation-timing-function: ease-in; // описывает, как будет развиваться анимация
+        animation-direction: alternate-reverse; // направление
+        // animation-play-state: ; состояние анимации :запуск/пауза
+    }
+
+    .title__about {
+        margin-top: 10px;
+
+        width: 532px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    // анимация иконки  `title__about`
+    .title__about:hover {
+        animation-name: title__about; // привязка анимации через имя анимации(title__about)
+        animation-duration: 3s; // время действия,скорости анимации
+        animation-iteration-count: infinite; // указывает, сколько раз проигрывается цикл анимации/infinite - анимация проигрывается безконечно
+        animation-timing-function: ease; // описывает, как будет развиваться анимация
+        animation-direction: alternate-reverse; // направление
+        // animation-play-state: ; состояние анимации :запуск/пауза
+    }
+
+    .title {
+        color: #000000;
+    }
+
+    .title__links {
+        width: 230px;
+
+        margin-top: 25px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title__btn {
+            width: 135px;
+            height: 45px;
+
+            background: $main-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border: none;
+            border-radius: 10px;
+            outline: none;
+
+            &:active {
+                transform: scale(105%);
+                transition: all .3s;
+            }
+
+            &:active a {
+                color: rgb(216, 17, 17);
+            }
+        }
+
+
+
+        .title__btn a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+
+        .title__link a {
+            display: block;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+
+            &:active {
+                transform: scale(105%);
+                transition: all .1s;
+            }
+
+            &:active {
+                color: #fff;
+            }
+        }
+    }
+}

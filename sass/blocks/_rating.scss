@@ -1,0 +1,145 @@
+.rating {
+    padding-top: 120px;
+
+    &__lists {
+        display: grid;
+        grid-template-rows: 70px 70px;
+        grid-template-columns: 350px 350px 350px;
+        justify-content: space-between;
+        justify-items: stretch;
+        align-items: center;
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
+
+        .rating__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 26px;
+        }
+
+        .rating__text {
+            position: relative;
+            @include before__circle;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                transform: translate(-2px, -2px);
+            }
+        }
+
+        .rating__value {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            transform: translateX(-50%);
+        }
+
+    }
+
+
+
+    &__strip0 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: $main-color;
+        }
+    }
+
+    &__strip1 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 75%;
+            background: $main-color;
+        }
+    }
+
+    &__strip2 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 85%;
+            background: $main-color;
+        }
+    }
+
+    &__strip3 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 90%;
+            background: $main-color;
+        }
+    }
+
+    &__strip4 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 90%;
+            background: $main-color;
+        }
+    }
+
+    &__strip5 {
+
+        width: 333px;
+        height: 14px;
+        background: #E8E4DE;
+
+        border-radius: 4px;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 95%;
+            background: $main-color;
+        }
+    }
+}
